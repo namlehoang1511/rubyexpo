@@ -19,7 +19,10 @@
   #{a}*(x**2) + #{b}*x + #{c} = 0"
   
   d = Math.sqrt(b**2 -4*a*c)
+
+  x1 = (-b + d)/(2*a)
+  x2 = (-b - d)/(2*a)
   
-  puts "Your xs are + #{x1 = (-b + d)/(2*a)} and #{x2 = (-b - d)/(2*a)}"
+  puts "Your xs are + #{x1} and #{x2}"
   
   
