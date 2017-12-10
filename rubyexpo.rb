@@ -1,3 +1,4 @@
+ require "mathn"
  puts "insert a"
   while a = gets.chomp.to_i
     case a
@@ -17,7 +18,8 @@
   puts "your equation is 
   #{a}*(x**2) + #{b}*x + #{c} = 0"
   
-  puts x1 = (-b + Math.sqrt((b**2 -4*a*c)).to_i)/(2*a)
-  puts x2 = (-b - Math.sqrt((b**2 -4*a*c)).to_i)/(2*a)
+  d = Math.sqrt(b**2 -4*a*c)
+  
+  puts "Your xs are + #{x1 = (-b + d)/(2*a)} and #{x2 = (-b - d)/(2*a)}"
   
   
